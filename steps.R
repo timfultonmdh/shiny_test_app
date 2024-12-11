@@ -13,11 +13,11 @@ system.file("examples", "01_hello", package="shiny") |>
 library(shinylive)
 
 # Export the app
-shinylive::export("app", "docs")  # This can take a few minutes
+shinylive::export("app", "site")  # This can take a few minutes
 
 # 03. Check the app is working 
 
-httpuv::runStaticServer("docs")
+httpuv::runStaticServer("site")
  
 # 04. Add Yaml
 library(usethis)
