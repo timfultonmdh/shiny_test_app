@@ -19,4 +19,6 @@ shinylive::export("app", "docs")  # This can take a few minutes
 
 httpuv::runStaticServer("docs")
  
-# Adding comment
+# 04. Add Yaml
+library(usethis)
+usethis::use_github_action(url="https://github.com/posit-dev/r-shinylive/blob/actions-v1/examples/deploy-app.yaml")
